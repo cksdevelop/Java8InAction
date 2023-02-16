@@ -11,6 +11,7 @@ public class Book {
         Author[] authors = Book.class.getAnnotationsByType(Author.class);
         Arrays.asList(authors).stream().forEach(a -> {
             System.out.println(a.name());
+            System.out.println("......");
         });
     }
 
